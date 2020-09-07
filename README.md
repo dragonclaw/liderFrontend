@@ -1,3 +1,11 @@
+LIDER FRONTEND REPOSITORY
+
+Development: run $npm install and later $npm start
+
+Unit test running $npm run test
+
+Dockerfile for docker usage included.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

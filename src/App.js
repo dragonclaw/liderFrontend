@@ -13,7 +13,6 @@ function App() {
 		})
 
 		if (response.data.success) {
-			console.log(response.data.data)
 			setSearchResults(response.data.data)
 		}
 	}
