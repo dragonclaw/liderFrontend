@@ -11,7 +11,10 @@ display:flex;
 `
 const Logo = styled.img`
     height:50px;
-    margin: 25px;
+	margin: 25px;
+	@media (max-width: 768px) {
+		display:none;
+	  }
 `
 
 const Form = styled.form`
@@ -40,7 +43,6 @@ function SearchBar(props) {
 	}
 
 	const handleChange = (event) => {
-
 		setSearchTerm(event.target.value);
 	}
 
@@ -49,11 +51,10 @@ function SearchBar(props) {
 		<Header>
 			<Logo src={LogoSVG}></Logo>
 			<Form onSubmit={onSubmitTerm}>
-				<Input placeholder='Buscar productos...' type='textarea' value={searchTerm} onChange={handleChange} style={{ width: '75%' }}></Input>
+				<Input placeholder='Buscar productos...' type='textarea' value={searchTerm} onChange={handleChange} style={{ marginLeft: '25px', width: '75%' }}></Input>
 				<SearchButton type='submit' value={'Buscar'}></SearchButton>
 			</Form>
-
-		</Header>
+		</Header >
 	)
 }
 
